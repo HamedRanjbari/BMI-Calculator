@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <title>BMI Calculator | Hamed Ranjbari</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="BMI-Weight">
+          <input id="BMI-Weight" type="range" min="40" max="170" value="40">
+          <p class="BMI-W">40 kg</p>
+        </div>
+        <div class="BMI-Height">
+          <input id="BMI-Height" type="range" min="100" max="240" value="100">
+          <p class="BMI-H">100 cm</p>
+        </div>
+        <div class="result">
+          <h3 class="result-header">0</h3>
+          <p class="result-text"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

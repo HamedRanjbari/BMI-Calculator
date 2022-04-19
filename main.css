@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    background: linear-gradient(45deg, rgb(0, 255, 157), rgb(0, 132, 255));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 60vw;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px
+}
+.BMI-Weight, .BMI-Height{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.BMI-Weight input, .BMI-Height input{
+    width: 80%;
+    margin-right: 1rem;
+}
+.BMI-Weight p, .BMI-Height p{
+    width: 20%;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.result p{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+@media screen and (max-width: 560px) {
+    .card{
+        width: 90vw;
+        padding: 1rem;
+    }
+}
